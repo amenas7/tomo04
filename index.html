@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo 3D</title>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">
+        <a-entity light="type: directional; castShadow: true; intensity: 10;" position="1 1 1"></a-entity>
+        <a-marker preset="hiro">
+            <a-entity 
+            obj-model="obj: url(VICTOR_HERRERA_3DMODEL_01.obj); 
+            mtl: url(VICTOR_HERRERA_3DMODEL_01.mtl)" 
+            scale="0.3 0.3 0.3" 
+            position="0 0 0"
+            rotation="-90 90 270"
+            ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
